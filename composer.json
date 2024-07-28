@@ -28,6 +28,9 @@
     }
   },
   "extra": {
+    "branch-alias": {
+      "dev-main": "0.0.x-dev"
+    },
     "composer-normalize": {
       "indent-size": 2,
       "indent-style": "space"
