@@ -1,0 +1,36 @@
+{
+  "name": "simensen/rector",
+  "description": "Simensen's Rules and Tools for Rector",
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "phpstan/phpstan": "^1.11",
+    "rector/rector": "^1.2"
+  },
+  "require-dev": {
+    "ergebnis/composer-normalize": "^2.43"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Simensen\\Rector\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Simensen\\Rector\\Tests\\Integration\\": "tests/Integration/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "ergebnis/composer-normalize": true
+    }
+  },
+  "extra": {
+    "composer-normalize": {
+      "indent-size": 2,
+      "indent-style": "space"
+    }
+  }
+}
