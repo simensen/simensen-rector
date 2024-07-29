@@ -148,7 +148,7 @@ final class RemoveDefaultFromImplicitlyRequiredParamRector extends AbstractRecto
                 if ($param->type instanceof Node\UnionType) {
                     $param->type->types[] = new Node\Identifier('null');
                     $changed = true;
-                } elseif (!$param->type instanceof Node\NullableType) {
+                } elseif ($param->type && !$param->type instanceof Node\NullableType) {
                     $param->type = new Node\NullableType($param->type);
                     $changed = true;
                 }
