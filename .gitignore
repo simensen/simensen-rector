@@ -4,3 +4,4 @@
 .phpunit.cache
 tools/
 vendor/
+composer.lock

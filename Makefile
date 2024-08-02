@@ -27,10 +27,14 @@ help: ## Displays this list of targets with descriptions
 test: phive vendor ## Tests code
 	phpunit
 
-vendor: composer.json composer.lock
+vendor: composer.json
 	composer validate --strict
 	composer install --no-interaction --no-progress
 
 .PHONY: clean
 clean: 
 	rm -rf vendor tools
+
+.PHONY: realclean
+realclean: clean
+	rm -rf composer.lock
