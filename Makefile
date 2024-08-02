@@ -1,5 +1,5 @@
 .PHONY: it
-it: tools
+it: tools vendor
 
 .PHONY: tools
 tools: phive
